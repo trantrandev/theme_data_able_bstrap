@@ -16,7 +16,7 @@ function fc(e){if(e.which==13){cfc(e)}};function cfc(e){$('.header-chat .main-fr
 '</div>'+
 '');frc($('.h-send-chat').val());fsc();$('.h-send-chat').val(null);};function frc(wrmsg){setTimeout(function(){$('.header-chat .main-friend-chat').append(''+
 '<div class="media chat-messages typing">'+
-'<a class="media-left photo-table" href="#!"><img class="media-object img-radius img-radius m-t-5" src="../assets/images/user/avatar-2.jpg" alt="Generic placeholder image"></a>'+
+'<a class="media-left photo-table" href="#!"><img class="media-object img-radius img-radius m-t-5" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image"></a>'+
 '<div class="media-body chat-menu-content">'+
 '<div class="rem-msg">'+
 '<p class="chat-cont">Typing . . .</p>'+
