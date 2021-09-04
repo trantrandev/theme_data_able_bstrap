@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Datta Able - Ecommerce dashboard</title>
+	<title>Datta Able - Form select</title>
 
 
-<!--[if lt IE 11]>
+<!--[if lt IE 10]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
@@ -21,6 +22,10 @@
 		<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
 
 		<link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
+
+		<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+		<link rel="stylesheet" href="assets/plugins/multi-select/css/multi-select.css">
 
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
@@ -49,11 +54,11 @@
 						<li class="nav-item pcoded-menu-caption">
 							<label>Navigation</label>
 						</li>
-						<li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item pcoded-hasmenu active pcoded-trigger">
+						<li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item pcoded-hasmenu">
 							<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
 							<ul class="pcoded-submenu">
 								<li class=""><a href="index.html" class="">Default</a></li>
-								<li class="active"><a href="dashboard-ecommerce.html" class="">Ecommerce</a></li>
+								<li class=""><a href="dashboard-ecommerce.html" class="">Ecommerce</a></li>
 								<li class=""><a href="dashboard-crm.html" class="">CRM</a></li>
 								<li class=""><a href="dashboard-analytics.html" class="">Analytics</a></li>
 								<li class=""><a href="dashboard-crypto.html" class="">Crypto<span class="pcoded-badge label label-danger">NEW</span></a></li>
@@ -156,7 +161,7 @@
 						<li class="nav-item pcoded-menu-caption">
 							<label>Forms</label>
 						</li>
-						<li data-username="form elements advance componant validation masking wizard picker select" class="nav-item pcoded-hasmenu">
+						<li data-username="form elements advance componant validation masking wizard picker select" class="nav-item pcoded-hasmenu active pcoded-trigger">
 							<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Forms</span></a>
 							<ul class="pcoded-submenu">
 								<li class=""><a href="form_elements.html" class="">Form elements</a></li>
@@ -165,7 +170,7 @@
 								<li class=""><a href="form-masking.html" class="">Form masking</a></li>
 								<li class=""><a href="form-wizard.html" class="">Form wizard</a></li>
 								<li class=""><a href="form-picker.html" class="">Form picker</a></li>
-								<li class=""><a href="form-select.html" class="">Form select</a></li>
+								<li class="active"><a href="form-select.html" class="">Form select</a></li>
 							</ul>
 						</li>
 						<li class="nav-item pcoded-menu-caption">
@@ -566,7 +571,7 @@
 								<h6 class="chat-header">Suzen<small class="d-block text-muted">15 min ago</small></h6>
 							</div>
 						</div>
-						<div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe">
+						<div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe"> 
 							<a class="media-left" href="#!"><img class="media-object img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image ">
 								<div class="live-status">3</div>
 							</a>
@@ -629,7 +634,7 @@
 						<div class="media chat-messages">
 							<div class="media-body chat-menu-reply">
 								<div class="">
-									<p class="chat-cont">Ohh! very nice</p> 
+									<p class="chat-cont">Ohh! very nice</p>
 								</div>
 								<p class="chat-time">8:22 a.m.</p>
 							</div>
@@ -661,7 +666,7 @@
 		</section>
 
 
-		<div class="pcoded-main-container">
+		<section class="pcoded-main-container">
 			<div class="pcoded-wrapper">
 				<div class="pcoded-content">
 					<div class="pcoded-inner-content">
@@ -671,11 +676,12 @@
 								<div class="row align-items-center">
 									<div class="col-md-12">
 										<div class="page-header-title">
-											<h5 class="m-b-10">Dashboard</h5>
+											<h5 class="m-b-10">Form Select</h5>
 										</div>
 										<ul class="breadcrumb">
 											<li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
-											<li class="breadcrumb-item"><a href="#!">Dashboard Ecommerce</a></li>
+											<li class="breadcrumb-item"><a href="#!">Form Components</a></li>
+											<li class="breadcrumb-item"><a href="#!">Form Select</a></li>
 										</ul>
 									</div>
 								</div>
@@ -686,343 +692,297 @@
 							<div class="page-wrapper">
 
 								<div class="row">
-
-									<div class="col-md-6 col-xl-4">
-										<div class="card Online-Order">
-											<div class="card-block">
-												<h5>Online Orders</h5>
-												<h6 class="text-muted d-flex align-items-center justify-content-between m-t-30">Delivery Orders<span class="float-right f-18 text-c-green">237 / 400</span></h6>
-												<div class="progress mt-3">
-													<div class="progress-bar progress-c-theme" role="progressbar" style="width:65%;height:6px;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-												</div>
-												<span class="text-muted mt-2 d-block">37% Done</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6 col-xl-4">
-										<div class="card Online-Order">
-											<div class="card-block">
-												<h5>Pending Orders</h5>
-												<h6 class="text-muted d-flex align-items-center justify-content-between m-t-30">Pending Orders<span class="float-right f-18 text-c-purple">100 / 500</span></h6>
-												<div class="progress mt-3">
-													<div class="progress-bar progress-c-theme2" role="progressbar" style="width:50%;height:6px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-												</div>
-												<span class="text-muted mt-2 d-block">20% Pending</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-12 col-xl-4">
-										<div class="card Online-Order">
-											<div class="card-block">
-												<h5>Return Orders</h5>
-												<h6 class="text-muted d-flex align-items-center justify-content-between m-t-30">Return Orders<span class="float-right f-18 text-c-blue">50 / 400</span></h6>
-												<div class="progress mt-3">
-													<div class="progress-bar progress-c-blue" role="progressbar" style="width:40%;height:6px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-												</div>
-												<span class="text-muted mt-2 d-block">10% Return</span>
-											</div>
+									<div class="col-sm-12">
+										<div class="alert alert-primary" role="alert">
+											<p>Use our extra helper file for quick setup Form Components in your page - <a href="index-form-package.html" target="_blank" class="alert-link">CHECKOUT</a></p>
+											<label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
 										</div>
 									</div>
 
-
-									<div class="col-xl-8 col-md-12">
-										<div class="card">
+									<div class="col-sm-12">
+										<div class="card select-card">
 											<div class="card-header">
-												<h5>Yearly Summary</h5>
-												<div class="card-header-right">
-													<div class="btn-group card-option">
-														<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-															<i class="feather icon-more-horizontal"></i>
-														</button>
-														<ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
-															<li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
-															<li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
-															<li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
-															<li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
-														</ul>
-													</div>
-												</div>
+												<h5>Select2</h5>
 											</div>
 											<div class="card-block">
-												<div class="row pb-3">
-													<div class="col-md-4 col-6 text-center m-b-10">
-														<h3 class="f-w-300">$2356.4</h3>
-														<span>Invoiced</span>
+												<div class="row">
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Single Select</h5>
+														<hr>
+														<p>The<code>select2</code> can take a regular select box like this...</p>
+														<select class="js-example-basic-single form-control">
+															<optgroup label="Developer">
+																<option value="AL">Alabama</option>
+																<option value="WY">Wyoming</option>
+															</optgroup>
+															<optgroup label="Designer">
+																<option value="WY">Peter</option>
+																<option value="WY">Hanry Die</option>
+																<option value="WY">John Doe</option>
+															</optgroup>
+														</select>
 													</div>
-													<div class="col-md-4 col-6 text-center m-b-10">
-														<h3 class="f-w-300">$1935.6</h3>
-														<span>Profit</span>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Multi Select</h5>
+														<hr>
+														<p>The select below is declared with the<code>multiple</code> attribute</p>
+														<select class="js-example-basic-multiple col-sm-12" multiple="multiple">
+															<option value="AL">Alabama</option>
+															<option value="WY">Wyoming</option>
+															<option value="WY">Coming</option>
+															<option value="WY">Hanry Die</option>
+															<option value="WY">John Doe</option>
+														</select>
 													</div>
-													<div class="col-md-4 col-12 text-center m-b-10">
-														<h3 class="f-w-300">$468.9</h3>
-														<span>Expenses</span>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>With Placeholder</h5>
+														<hr>
+														<p><code>select2</code> uses the <code>placeholder</code> attribute on multiple select boxes</p>
+														<select class="js-example-placeholder-multiple col-sm-12">
+															<option value="AL">Alabama</option>
+															<option value="WY">Wyoming</option>
+															<option value="WY">Coming</option>
+															<option value="WY">Hanry Die</option>
+															<option value="WY">John Doe</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Tagging Support</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-example-tags</code></p>
+														<select class="js-example-tags col-sm-12" multiple="multiple">
+															<option value="AL">Alabama</option>
+															<option value="WY">Wyoming</option>
+															<option value="WY">Coming</option>
+															<option value="WY">Hanry Die</option>
+															<option value="WY">John Doe</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Automatic Tokenization</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-example-tokenizer</code></p>
+														<select class="js-example-tokenizer col-sm-12" multiple="multiple">
+															<option value="AL">Alabama</option>
+															<option value="WY">Wyoming</option>
+															<option value="WY">Coming</option>
+															<option value="WY">Hanry Die</option>
+															<option value="WY">John Doe</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>RTL Support</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-example-rtl</code></p>
+														<select class="js-example-rtl col-sm-12" multiple="multiple">
+															<option value="AL">Alabama</option>
+															<option value="WY">Wyoming</option>
+															<option value="WY">Coming</option>
+															<option value="WY">Hanry Die</option>
+															<option value="WY">John Doe</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Limiting The Number Of Selections</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-example-basic-multiple-limit</code></p>
+														<select class="js-example-basic-multiple-limit col-sm-12" multiple="multiple">
+															<option value="AL">Alabama</option>
+															<option value="WY">Wyoming</option>
+															<option value="WY">Coming</option>
+															<option value="WY">Hanry Die</option>
+															<option value="WY">John Doe</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Diacritics Support</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-example-diacritics</code></p>
+														<select class="js-example-diacritics col-sm-12" multiple="multiple">
+															<option value="AL">Alabama</option>
+															<option value="WY">Wyoming</option>
+															<option value="WY">Coming</option>
+															<option value="WY">Hanry Die</option>
+															<option value="WY">John Doe</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Responsive Width</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-example-responsive</code></p>
+														<select class="js-example-responsive col-sm-12" multiple="multiple" style="width:75%;">
+															<option value="AL">Alabama</option>
+															<option value="WY">Wyoming</option>
+															<option value="WY">Coming</option>
+															<option value="WY">Hanry Die</option>
+															<option value="WY">John Doe</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Loading With Array</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-example-data-array</code></p>
+														<select class="js-example-data-array col-sm-12"></select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Load Remote Data ( Ajax )</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-data-example-ajax</code>
+														</p>
+														<select class="js-data-example-ajax col-sm-12">
+															<option value="3620194" selected="selected">select2</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Disabled Results</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-example-disabled-results</code></p>
+														<select class="js-example-disabled-results col-sm-12">
+															<option value="one">First</option>
+															<option value="two" disabled="disabled">Second (disabled)
+															</option>
+															<option value="three">Third</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5 class="sub-title">Hiding The Search Box</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-example-basic-hide-search</code></p>
+														<select class="js-example-basic-hide-search col-sm-12" multiple="multiple" style="width: 75%">
+															<optgroup label="Developer">
+																<option value="AL">Smith</option>
+																<option value="WY">Peter</option>
+																<option value="WY">James</option>
+																<option value="WY">Hanry Die</option>
+																<option value="WY">John Doe</option>
+																<option value="WY">Harry Poter</option>
+															</optgroup>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6  mb-5">
+														<h5>Enable-Disable</h5>
+														<hr>
+														<p>The select below is declared with the class<code>.js-example-disabled</code></p>
+														<select class="js-example-disabled col-sm-8">
+															<option value="AL">Smith</option>
+															<option value="WY">Peter</option>
+															<option value="WY">James</option>
+															<option value="WY">Hanry Die</option>
+															<option value="WY">John Doe</option>
+															<option value="WY">Harry Poter</option>
+														</select>
+														<button class="btn btn-success m-t-20 m-b-20 m-l-10   js-programmatic-enable">Enable</button>
+														<button class="btn btn-danger m-t-20 m-b-20 m-l-10   js-programmatic-disable">Disable</button>
 													</div>
 												</div>
-												<div id="bar-chart3" class="bar-chart3" style="height:270px;"></div>
 											</div>
 										</div>
 									</div>
 
 
-									<div class="col-md-6 col-xl-4">
-										<div class="card theme-bg earning-date">
-											<div class="card-header borderless">
-												<h5 class="text-white">Earnings</h5>
-											</div>
-											<div class="card-block">
-												<div class="bd-example bd-example-tabs">
-													<div class="tab-content" id="tabContent-pills">
-														<div class="tab-pane fade show active" id="earnings-mon" role="tabpanel" aria-labelledby="pills-earnings-mon">
-															<h2 class="text-white mb-3 f-w-300">359,234<i class="feather icon-arrow-up"></i></h2>
-															<span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
-														</div>
-														<div class="tab-pane fade" id="earnings-tue" role="tabpanel" aria-labelledby="pills-earnings-tue">
-															<h2 class="text-white mb-3 f-w-300">222,586<i class="feather icon-arrow-down"></i></h2>
-															<span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
-														</div>
-														<div class="tab-pane fade" id="earnings-wed" role="tabpanel" aria-labelledby="pills-earnings-wed">
-															<h2 class="text-white mb-3 f-w-300">859,745<i class="feather icon-arrow-up"></i></h2>
-															<span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
-														</div>
-														<div class="tab-pane fade" id="earnings-thu" role="tabpanel" aria-labelledby="pills-earnings-thu">
-															<h2 class="text-white mb-3 f-w-300">785,684<i class="feather icon-arrow-up"></i></h2>
-															<span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
-														</div>
-														<div class="tab-pane fade" id="earnings-fri" role="tabpanel" aria-labelledby="pills-earnings-fri">
-															<h2 class="text-white mb-3 f-w-300">123,486<i class="feather icon-arrow-down"></i></h2>
-															<span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
-														</div>
-														<div class="tab-pane fade" id="earnings-sat" role="tabpanel" aria-labelledby="pills-earnings-sat">
-															<h2 class="text-white mb-3 f-w-300">762,963<i class="feather icon-arrow-up"></i></h2>
-															<span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
-														</div>
-														<div class="tab-pane fade" id="earnings-sun" role="tabpanel" aria-labelledby="pills-earnings-sun">
-															<h2 class="text-white mb-3 f-w-300">984,632<i class="feather icon-arrow-down"></i></h2>
-															<span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
-														</div>
-													</div>
-													<ul class="nav nav-pills align-items-center justify-content-center" id="pills-tab" role="tablist">
-														<li class="nav-item">
-															<a class="nav-link active" id="pills-earnings-mon" data-toggle="pill" href="#earnings-mon" role="tab" aria-controls="earnings-mon" aria-selected="true">Mon</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" id="pills-earnings-tue" data-toggle="pill" href="#earnings-tue" role="tab" aria-controls="earnings-tue" aria-selected="false">Tue</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" id="pills-earnings-wed" data-toggle="pill" href="#earnings-wed" role="tab" aria-controls="earnings-wed" aria-selected="false">Wed</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" id="pills-earnings-thu" data-toggle="pill" href="#earnings-thu" role="tab" aria-controls="earnings-thu" aria-selected="false">Thu</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" id="pills-earnings-fri" data-toggle="pill" href="#earnings-fri" role="tab" aria-controls="earnings-fri" aria-selected="false">Fri</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" id="pills-earnings-sat" data-toggle="pill" href="#earnings-sat" role="tab" aria-controls="earnings-sat" aria-selected="false">Sat</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" id="pills-earnings-sun" data-toggle="pill" href="#earnings-sun" role="tab" aria-controls="earnings-sun" aria-selected="false">Sun</a>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<div class="card theme-bg2">
-											<div class="card-block">
-												<div class="row align-items-center justify-content-center">
-													<div class="col-auto">
-														<img src="assets/images/widget/shape5.png" alt="activity-user">
-													</div>
-													<div class="col">
-														<h2 class="text-white f-w-300">375</h2>
-														<h5 class="text-white">Sale Product</h5>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-
-									<div class="col-xl-8 col-md-6">
-										<div class="card code-table">
+									<div class="col-sm-12">
+										<div class="card select-card">
 											<div class="card-header">
-												<h5>Full Width Table</h5>
-												<div class="card-header-right">
-													<div class="btn-group card-option">
-														<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-															<i class="feather icon-more-horizontal"></i>
-														</button>
-														<ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
-															<li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
-															<li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
-															<li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
-															<li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
-														</ul>
-													</div>
-												</div>
+												<h5>Multi Select</h5>
 											</div>
-											<div class="card-block pb-0">
-												<div class="table-responsive">
-													<table class="table table-hover">
-														<thead>
-															<tr>
-																<th>Id Number</th>
-																<th>Code</th>
-																<th>Date</th>
-																<th>Budget</th>
-																<th>Status</th>
-																<th class="text-right">Ratings</th>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>
-																		<h6 class="mb-1">#467</h6>
-																	</td>
-																	<td>
-																		<h6 class="mb-1">8765482</h6>
-																	</td>
-																	<td>
-																		<h6 class="m-b-0">Nov 14, 2017</h6>
-																	</td>
-																	<td>
-																		<h6 class="m-b-0">$ 874.23</h6>
-																	</td>
-																	<td><a href="#!" class="label theme-bg f-12 text-white">Active</a></td>
-																	<td class="text-right"><a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h6 class="mb-1">#466</h6>
-																	</td>
-																	<td>
-																		<h6 class="mb-1">2366482</h6>
-																	</td>
-																	<td>
-																		<h6 class="m-b-0">Nov 13, 2017</h6>
-																	</td>
-																	<td>
-																		<h6 class="m-b-0">$ 235.34</h6>
-																	</td>
-																	<td><a href="#!" class="label theme-bg2 f-12 text-white">Not Active</a></td>
-																	<td class="text-right"><a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h6 class="mb-1">#465</h6>
-																	</td>
-																	<td>
-																		<h6 class="mb-1">8832638</h6>
-																	</td>
-																	<td>
-																		<h6 class="m-b-0">Oct 14, 2017</h6>
-																	</td>
-																	<td>
-																		<h6 class="m-b-0">$ 233.46</h6>
-																	</td>
-																	<td><a href="#!" class="label theme-bg f-12 text-white">Active</a></td>
-																	<td class="text-right"><a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h6 class="mb-1">#464</h6>
-																	</td>
-																	<td>
-																		<h6 class="mb-1">9632638</h6>
-																	</td>
-																	<td>
-																		<h6 class="m-b-0">Dec 17, 2017</h6>
-																	</td>
-																	<td>
-																		<h6 class="m-b-0">$ 133.46</h6>
-																	</td>
-																	<td><a href="#!" class="label theme-bg2 f-12 text-white">Not Active</a></td>
-																	<td class="text-right"><a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h6 class="mb-1">#463</h6>
-																	</td>
-																	<td>
-																		<h6 class="mb-1">3332538</h6>
-																	</td>
-																	<td>
-																		<h6 class="m-b-0">July 14, 2017</h6>
-																	</td>
-																	<td>
-																		<h6 class="m-b-0">$ 244.46</h6>
-																	</td>
-																	<td><a href="#!" class="label theme-bg f-12 text-white">Active</a></td>
-																	<td class="text-right"><a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																		<a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
+											<div class="card-block">
+												<div class="row">
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Pre-Selected Options</h5>
+														<hr>
+														<select multiple="multiple" id="my-select" name="my-select[]">
+															<option value='elem_1' selected="">elem 1</option>
+															<option value='elem_2'>elem 2</option>
+															<option value='elem_3'>elem 3</option>
+															<option value='elem_4'>elem 4</option>
+															<option value='elem_5'>elem 5</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Custom Headers And Footers</h5>
+														<hr>
+														<select id='custom-headers1' multiple='multiple'>
+															<option value='elem_1'>elem 1</option>
+															<option value='elem_2'>elem 2</option>
+															<option value='elem_3'>elem 3</option>
+															<option value='elem_4'>elem 4</option>
+															<option value='elem_5'>elem 5</option>
+															<option value='elem_6'>elem 6</option>
+															<option value='elem_7'>elem 7</option>
+															<option value='elem_8'>elem 8</option>
+															<option value='elem_9'>elem 9</option>
+															<option value='elem_10'>elem 10</option>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-6 mb-5">
+														<h5>Optgroup</h5>
+														<hr>
+														<select id='optgroup' multiple='multiple'>
+															<optgroup label='Friends'>
+																<option value='1'>Yoda</option>
+																<option value='2' selected>Obiwan</option>
+															</optgroup>
+															<optgroup label='Enemies'>
+																<option value='3'>Palpatine</option>
+																<option value='4' disabled>Darth Vader</option>
+															</optgroup>
+														</select>
+													</div>
+													<div class="col-xl-4 col-md-12 mb-5">
+														<h5>Searchable</h5>
+														<hr>
+														<select id='custom-headers' class="searchable" multiple='multiple'>
+															<option value='elem_1' selected>elem 1</option>
+															<option value='elem_2'>elem 2</option>
+															<option value='elem_3'>elem 3</option>
+															<option value='elem_4' selected>elem 4</option>
+															<option value='elem_5'>elem 5</option>
+															<option value='elem_6'>elem 6</option>
+															<option value='elem_7'>elem 7</option>
+															<option value='elem_8'>elem 8</option> 
+															<option value='elem_9'>elem 9</option>
+															<option value='elem_10'>elem 10</option>
+															<option value='elem_11'>elem 11</option>
+															<option value='elem_12'>elem 12</option>
+															<option value='elem_13'>elem 13</option>
+															<option value='elem_14'>elem 14</option>
+															<option value='elem_15'>elem 15</option>
+															<option value='elem_16'>elem 16</option>
+														</select>
+													</div>
+													<div class="col-xl-8 col-md-12 mb-5">
+														<h5>Public Methods</h5>
+														<hr>
+														<button type="button" class="btn btn-primary   m-b-10" id='select-all'>select all</button>
+														<button type="button" class="btn btn-primary   m-b-10" id='deselect-all'>deselect all</button>
+														<button type="button" class="btn btn-primary   m-b-10" id='select-5'>select 5 elems</button>
+														<button type="button" class="btn btn-primary   m-b-10" id='deselect-5'>deselect 5 elems</button>
+														<select id='public-methods' multiple='multiple'>
+															<option value='elem_1'>elem 1</option>
+															<option value='elem_2' disabled>elem 2</option>
+															<option value='elem_3'>elem 3</option>
+															<option value='elem_4'>elem 4</option>
+															<option value='elem_5'>elem 5</option>
+															<option value='elem_6'>elem 6</option>
+															<option value='elem_7'>elem 7</option>
+															<option value='elem_8'>elem 8</option>
+															<option value='elem_9'>elem 9</option>
+															<option value='elem_10'>elem 10</option>
+														</select>
 													</div>
 												</div>
 											</div>
 										</div>
-
-
-										<div class="col-xl-4 col-md-12">
-											<div class="card">
-												<div class="card-header">
-													<h5>Earnings</h5>
-													<span class="d-block pt-2">Mon 15 - Sun 21</span>
-													<div class="card-header-right">
-														<div class="btn-group card-option">
-															<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																<i class="feather icon-more-horizontal"></i>
-															</button>
-															<ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
-																<li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
-																<li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
-																<li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
-																<li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-												<div class="card-block">
-													<div class="earning-price mb-1">
-														<h3 class="m-0 f-w-300">$894.39</h3>
-													</div>
-													<div id="Widget-line-chart1" class="WidgetlineChart " style="height:245px;"></div>
-												</div>
-											</div>
-										</div>
-
 									</div>
 
 								</div>
+
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</section>
 
 
 
@@ -1076,16 +1036,11 @@
     	<script src="assets/js/pcoded.min.js"></script>
     	<script src="assets/js/menu-setting.min.js"></script>
 
-    	<script src="assets/plugins/amchart/js/amcharts.js"></script>
-    	<script src="assets/plugins/amchart/js/gauge.js"></script>
-    	<script src="assets/plugins/amchart/js/serial.js"></script>
-    	<script src="assets/plugins/amchart/js/light.js"></script>
-    	<script src="assets/plugins/amchart/js/pie.min.js"></script>
-    	<script src="assets/plugins/amchart/js/ammap.min.js"></script>
-    	<script src="assets/plugins/amchart/js/usaLow.js"></script>
-    	<script src="assets/plugins/amchart/js/radar.js"></script>
-    	<script src="assets/plugins/amchart/js/worldLow.js"></script>
+    	<script src="assets/plugins/select2/js/select2.full.min.js"></script>
 
-    	<script src="assets/js/pages/dashboard-ecommerce.js"></script>
+    	<script src="assets/plugins/multi-select/js/jquery.quicksearch.js"></script>
+    	<script src="assets/plugins/multi-select/js/jquery.multi-select.js"></script>
+
+    	<script src="assets/js/pages/form-select-custom.js"></script>
     </body>
     </html>
